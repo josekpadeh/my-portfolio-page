@@ -5,7 +5,7 @@ export default function Education(){
           3EAEAEA] h-50 my-6 py-8 rounded-lg border-4">
 
 <div class="flex justify-center">
-                <h3 class="bg-lime-500 border-4 w-25  border-dashed px-4 py-2">Education</h3>
+                <h3 class="bg-green-500 border-4 w-25  border-dashed px-4 py-2">Education</h3>
               </div>
               <details class="px-6 py-4">
                 <summary class="font-bold text-2xl text-gray-800">Starz University</summary>

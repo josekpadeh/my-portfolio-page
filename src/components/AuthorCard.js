@@ -1,10 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 
-export default function AuthorCard(){
-  const[isActive, setIsActive] = useState({
-    active: true,
-    name: "education"
-  })
+export default function AuthorCard({isActive, setIsActive}){
+  function handleActive(e){
+    e.preventDefault();
+    setIsActive({
+      active: true,
+      name: e.target.id
+    })
+  }
     return(
         <div id="intro" class="bg-[#
             3EAEAEA] h-auto my-6 py-8 rounded-lg border-4">
@@ -20,13 +23,13 @@ export default function AuthorCard(){
                   <div className="p-6 max-w-full mx-auto">
                     <ul className="flex justify-center items-center gap-4">
                     <li className={`border border-gray-500 rounded-lg p-2 ${isActive.active && isActive.name === "education" && 'bg-[#FF8F56]'}`}>
-                      <a href="" id="education" className="font-roboto font-bold text-xl text-[#E7EFF3]">Education</a>
+                      <a href="#education" onClick={handleActive} id="education" className="font-roboto font-bold text-xl ">Education</a>
                      </li>
                      <li className={`border border-gray-500 rounded-lg p-2 ${isActive.active && isActive.name === "work" && 'bg-[#FF8F56]'}`}>
-                      <a href="" id="work"  className="font-roboto  text-xl text-">Work</a>
+                      <a href="#work" onClick={handleActive} id="work"  className="font-roboto  text-xl text-">Work</a>
                       </li>
                       <li className={`border border-gray-500 rounded-lg p-2 ${isActive.active && isActive.name === "hobbies" && 'bg-[#FF8F56]'}`}>
-                      <a href="" id="hobbies"  className="font-roboto  text-xl ">Hobbies</a>
+                      <a href="#hobbies" onClick={handleActive} id="hobbies"  className="font-roboto  text-xl ">Hobbies</a>
                      </li>
                     </ul>
                   </div>
