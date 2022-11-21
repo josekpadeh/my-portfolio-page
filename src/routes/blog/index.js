@@ -1,6 +1,24 @@
- import React from "react";
+ import React, { useEffect } from "react";
  import Navbar from "../../components/Navbar";
+ import { collection, getDocs } from 'firebase/firestore/lite';
+ import {firebaseDB} from "../../db/firebase";
  export default function Blog(){
+  const [posts, setPosts] = useState([]);
+  async function getData() {
+    try{
+      const querySnapshot = await getDocs(collection (firebaseDB, "posts"));
+      setPosts(querySnapshot)
+        console.log('${doc.id} => ${doc.data()}');
+      });
+     
+  });
+   catch(error){
+    console.log(error);
+  }
+  }
+  useEffect(() => {
+    getData()
+  },[])
     return(
         <>
         <Navbar/>
