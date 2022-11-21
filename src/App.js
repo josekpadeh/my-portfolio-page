@@ -7,6 +7,7 @@ import Education from './components/Education';
 import Hobbies from './components/Hobbies';
 import {useState} from "react"; 
 
+
 function App() {
   const[isActive, setIsActive] = useState({
     active: true,
