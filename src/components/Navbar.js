@@ -53,8 +53,8 @@ export default function Navbar(){
                   sm:items-stretch sm:justify-start
                 ">
                 <div class="flex flex-shrink-0 items-center">
-                  <h4 class="block h-6 w-auto lg:hidden">Carlos S. Nah</h4>
-                  <h4 class="hidden h-6 w-auto lg:block">Carlos S. Nah</h4>
+                  <h4 class="block h-6 w-auto lg:hidden">I. Jose Kpadeh</h4>
+                  <h4 class="hidden h-6 w-auto lg:block">I. Jose Kpadeh</h4>
                 </div>
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" --> */}
@@ -68,7 +68,7 @@ export default function Navbar(){
                       font-medium
                       text-gray-900
                     ">Projects</a>
-                  <a href="/blog" class="
+                  <a herf="/blog" class="
                       inline-flex
                       items-center
                       border-b-2 border-transparent
@@ -79,7 +79,7 @@ export default function Navbar(){
                       text-gray-500
                       hover:border-gray-300 hover:text-gray-700
                     ">Blog</a>
-                  <a href="#" class="
+                  <a href="/contact" class="
                       inline-flex
                       items-center
                       border-b-2 border-transparent
@@ -130,7 +130,7 @@ export default function Navbar(){
                   text-gray-500
                   hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700
                 ">Blog</a>
-              <a href="#" class="
+              <a href="/contact" class="
                   block
                   border-l-4 border-transparent
                   py-2
@@ -146,5 +146,5 @@ export default function Navbar(){
         </nav>
       </div>
 
-    )
+    );
 }
