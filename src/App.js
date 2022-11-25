@@ -8,6 +8,7 @@ import Hobbies from './components/Hobbies';
 import {useState} from "react"; 
 
 
+
 function App() {
   const[isActive, setIsActive] = useState({
     active: true,
@@ -28,7 +29,9 @@ function App() {
         ) : (
           <Hobbies/>
         )
+       
       }
+
       
       
       </div>
