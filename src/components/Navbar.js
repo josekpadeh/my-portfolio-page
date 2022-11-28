@@ -54,8 +54,8 @@ export default function Navbar(){
                   sm:items-stretch sm:justify-start
                 ">
                 <div class="flex flex-shrink-0 items-center">
-                  <h4 class="block h-6 w-auto lg:hidden">I. Jose Kpadeh</h4>
-                  <h4 class="hidden h-6 w-auto lg:block">I. Jose Kpadeh</h4>
+                  <Link to="/"><h4 class="block h-6 w-auto lg:hidden">I. Jose Kpadeh</h4></Link>
+                  <Link to="/"><h4 class="hidden h-6 w-auto lg:block">I. Jose Kpadeh</h4></Link>
                 </div>
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" --> */}
